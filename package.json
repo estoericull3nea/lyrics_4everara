@@ -1,0 +1,12 @@
+{
+  "name": "lyricsproj",
+  "version": "1.0.0",
+  "description": "practice-website",
+  "main": "index.js",
+  "scripts": {
+    "test": "sample-command",
+    "start": "node index.js"
+  },
+  "author": "ericson palisoc",
+  "license": "ISC"
+}

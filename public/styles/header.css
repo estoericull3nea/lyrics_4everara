@@ -1,0 +1,167 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 6px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0 0 10px 2px black;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+}
+header.sticky {
+    padding: 5px 10%;
+    background: #0A2647;
+    color: white;
+}
+
+header.sticky a {
+    color: white;
+    position: relative;
+}
+
+header.sticky a::after {
+    background: white;
+}
+
+header .logo {
+    /* flex: 1; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header .logo i {
+   vertical-align: middle;
+   font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+
+header ul a {
+    color: black;
+    margin: 0 20px;
+    font-size: .8rem;
+
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+header ul a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    background: black;
+    transform: scale(0);
+    transition: all 200ms ease-in-out;
+}
+
+header ul a:hover::after {
+    transform: scale(1);
+}
+
+header ul li a.active::after {
+    transform: scale(1);
+}
+
+header .icons-area {
+    display: flex;
+}
+
+header .icons-area > div {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+header .icons-area > div:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.icons-area .menu-icon {
+    display: none;
+}
+
+.icons-area .moon-icon {
+    transition: all 300ms ease-in-out;
+}
+
+.icons-area .moon-icon:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 658px) {
+    .navlist {
+        position: absolute;
+        top: 100%;
+        width: 300px;
+        background-color: black;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: 5px 5px 30px 5px black;
+        border-radius: 10px;
+        right: -1000px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        transition: all 400ms ease-in-out;
+       
+        overflow-y:  hidden;
+        height: 100vh;
+    }
+
+    .navlist li {
+        width: inherit;
+        
+    }
+
+    .navlist a {
+        padding: 0;
+        margin: 0;
+        display: block;
+        color: white;
+        padding: 30px;
+        font-size: .9rem;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        transition: all 200ms ease-in-out;
+    }
+
+    .navlist li a:hover {
+        background-color: #144272;
+        border-radius: 10px;
+        transform: translateY(2px);
+    }
+
+    .navlist a:hover::after {
+        all: unset;
+    }
+
+    .icons-area .menu-icon {
+        display: block;
+    }
+
+    header ul li a.active::after {
+        transform: scale(0);
+    }
+
+    .navlist.open {
+        right: 0;
+    }
+}
+
