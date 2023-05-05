@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 </head>
 <body>
@@ -28,7 +30,7 @@
         </ul>
 
         <div class="icons-area">
-            <div class="moon-icon"><i class='bx bx-moon'></i></div>
+            <div class="moon-icon"><i class='bx ri-moon-clear-line'></i></div>
             <div class="menu-icon"><i id="sample" class='bx bx-menu-alt-right'></i></div>
         </div>
     </header>
@@ -46,11 +48,8 @@
    
 
     <section class="lyrics" id="lyrics">
-        
-        
-       
 
-        <h1>Greatest Hits</h1>
+        <h1>Suddenly All the Songs Were About You.</h1>
 
         <div class="box-wrapper">
 
@@ -85,7 +84,7 @@
             <div class="box">
 
                 <div class="vid-container">
-                    <video class="theVid">
+                    <video class="theVid" loop>
                         <source src="./videos/Urong Sulong.mp4">
                     </video>
                     <button class="sampleBtn">X</button>
@@ -98,7 +97,7 @@
                 
                 
                 <div class="top">
-                    <img src="./images/urong_sulong.jpg" alt="">
+                    <img src="./images/urong_sulong-revised.jpg" alt="">
                     <div class="text-part">
                         <h2>Urong Sulong</h2>
                         <h4>Alisson Shore</h4>
@@ -109,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <!-- <div class="box">
                 <div class="vid-container">
                     <video class="theVid">
                         <source src="./videos/Ikaw Lang.mp4">
@@ -131,7 +130,7 @@
                 <div class="bottom">
                     <p>Ikaw lamang pipiliin talaga dahil mas gusto mong mag ukay kaysa na mag SM pa (ikaw lang) ikaw lamang pipiliin talaga dahil gusto mong manatili kahit na mahirap na.</p>
                 </div>
-            </div>
+            </div> -->
 
             <div class="box">
                 <div class="vid-container">
@@ -194,7 +193,7 @@
                     </div>
                 </div>
                 <div class="top">
-                    <img src="./images/favorite_clothes.jpg" alt="">
+                    <img src="./images/favorite_clothes_revised.jpg" alt="">
                     <div class="text-part">
                         <h2>My Favourite Clothes</h2>
                         <h4>RINI</h4>
@@ -218,7 +217,7 @@
                     </div>
                 </div>
                 <div class="top">
-                    <img style="height: 100px" src="./images/first_love.png" alt="">
+                    <img style="height: 100px" src="./images/first_love_revised.png" alt="">
                     <div class="text-part">
                         <h2>First Love</h2>
                         <h4>Repablikan</h4>
@@ -242,7 +241,7 @@
                     </div>
                 </div>
                 <div class="top">
-                    <img style="height: 100px" src="./images/classmate.jpg" alt="">
+                    <img style="height: 100px" src="./images/classmate_revised.jpg" alt="">
                     <div class="text-part">
                         <h2>Classmate</h2>
                         <h4>Hambok ng Sagpro Krew</h4>
@@ -266,7 +265,7 @@
                 </div>
             </div>
             <div class="top">
-                <img style="height: 100px" src="./images/glimpse.jpg" alt="">
+                <img style="height: 100px" src="./images/glimpse_revised.jpg" alt="">
                 <div class="text-part">
                     <h2>Glimpse of Us</h2>
                     <h4>Joji</h4>
@@ -290,7 +289,7 @@
                 </div>
             </div>
             <div class="top">
-                <img style="height: 100px" src="./images/araw_araw.jpg" alt="">
+                <img style="height: 100px" src="./images/araw_araw_revised.jpg" alt="">
                 <div class="text-part">
                     <h2>Araw Araw</h2>
                     <h4>Ben & Ben</h4>
@@ -421,29 +420,7 @@
             </div>
         </div>
 
-        <div class="box hide">
-            <div class="vid-container">
-                <video class="theVid">
-                    <source src="./videos/Magbalik.mp4">
-                </video>
-                <button class="sampleBtn">X</button>
-            </div>
-
-            <div class="overlay">
-                <div class="play-btn"> <i class='bx bx-play-circle'></i>
-                </div>
-            </div>
-            <div class="top">
-                <img style="height: 100px" src="./images/magbalik.jpg" alt="">
-                <div class="text-part">
-                    <h2>Magbalik</h2>
-                    <h4>Callalily</h4>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Hindi magbabago, pagmamahal sa iyo sana'y pakinggan mo ang awit ng pusong ito tulad ng mundong hindi tumitigil sa pag-ikot pag ibig di mapapagod.</p>
-            </div>
-        </div>
+       
 
         <div class="box hide">
             <div class="vid-container">
@@ -469,29 +446,7 @@
             </div>
         </div>
 
-        <div class="box hide">
-            <div class="vid-container">
-                <video class="theVid">
-                    <source src="./videos/A Thousand Miles.mp4">
-                </video>
-                <button class="sampleBtn">X</button>
-            </div>
-
-            <div class="overlay">
-                <div class="play-btn"> <i class='bx bx-play-circle'></i>
-                </div>
-            </div>
-            <div class="top">
-                <img style="height: 100px" src="./images/thousand_miles.jpg" alt="">
-                <div class="text-part">
-                    <h2>A Thousand Miles</h2>
-                    <h4>Vanessa Carlton</h4>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Staring blankly ahead, just making my way, making a way through the crowd, and I need you, and I miss you, and now I wonder, if I could fall into the sky.</p>
-            </div>
-        </div>
+        
 
         <div class="box hide">
             <div class="vid-container">
@@ -565,29 +520,7 @@
             </div>
         </div>
 
-        <div class="box hide">
-            <div class="vid-container">
-                <video class="theVid">
-                    <source src="./videos/Sorry Na.mp4">
-                </video>
-                <button class="sampleBtn">X</button>
-            </div>
-
-            <div class="overlay">
-                <div class="play-btn"> <i class='bx bx-play-circle'></i>
-                </div>
-            </div>
-            <div class="top">
-                <img style="height: 100px" src="./images/sorry_na.jpg" alt="">
-                <div class="text-part">
-                    <h2>Sorry Na</h2>
-                    <h4>Parokya Ni Edgar</h4>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Mahal kita sobrang mahal kita, wala na akong pwedeng sabihin pang iba, kundi sorry talaga di ko sinasadya, talagang sobrang mahal kita wag kang mawawala, sorry na.</p>
-            </div>
-        </div>
+       
 
         <div class="box hide">
             <div class="vid-container">
@@ -722,7 +655,7 @@
                 </div>
             </div>
             <div class="top">
-                <img style="height: 100px" src="./images/a_thousand_years.jpg" alt="">
+                <img style="height: 100px" src="./images/a_thousand_years_revised.jpg" alt="">
                 <div class="text-part">
                     <h2>A Thousand Years</h2>
                     <h4>Christina Perri</h4>
@@ -733,32 +666,7 @@
             </div>
         </div>
 
-        <div class="box hide">
-            <div class="vid-container">
-                <video class="theVid">
-                    <source src="./videos/Liwanag Sa Dilim.mp4">
-                </video>
-                <button class="sampleBtn">X</button>
-            </div>
-
-            <div class="overlay">
-                <div class="play-btn"> <i class='bx bx-play-circle'></i>
-                </div>
-            </div>
-            <div class="top">
-                <img style="height: 100px" src="./images/liwanag.jpg" alt="">
-                <div class="text-part">
-                    <h2>Liwanag Sa Dilim</h2>
-                    <h4>Rivermaya</h4>
-                </div>
-            </div>
-            <div class="bottom">
-                <p>Isigaw mo sa hangin, tumindig,
-                    at magsilbing liwanag sa dilim,
-                    harapin mong magiting ang bagong awitin,
-                    liwanag sa dilim.</p>
-            </div>
-        </div>
+        
 
         </div>
 

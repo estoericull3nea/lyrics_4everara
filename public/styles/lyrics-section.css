@@ -85,25 +85,26 @@ section.lyrics .box-wrapper .box .top .text-part h2 {
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 500;
-    font-size: .8rem;
+    font-size: .6rem;
+    line-height: 1.7;
 }
 
 section.lyrics .box-wrapper .box .top .text-part h4 {
-    font-weight: 300;
-    font-size: .9rem;
-    padding-top: .2rem;
+    font-weight: 100;
+    font-size: .5rem;
+    padding-top: .8rem;
     text-align: center;
+
 }
 
 section.lyrics .box-wrapper .box .bottom {
-    font-size: 1.5rem;
     flex: 1;
     
 }
 
 section.lyrics .box-wrapper .box .bottom p {
-    font-size: .8rem;
-    line-height: 1.2;
+    font-size: .5rem;
+    line-height: 1.5;
     letter-spacing: 1px;
     color: #915357;
     text-align: center;
@@ -153,7 +154,7 @@ section.lyrics h1 {
 
 .middle-to-expand .btn {
     border-radius: 10px;
-    font-size: .9rem;
+    font-size: .6rem;
     width: 200px;
 
     position: absolute;

@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     background: transparent;
-    padding: 6px 10%;
+    padding: 7px 10%;
 
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header.sticky a::after {
 
 header .logo {
     /* flex: 1; */
-    font-size: 1.5rem;
+    font-size: .7rem;
     font-weight: 700;
     cursor: pointer;
 }
@@ -38,19 +38,22 @@ header .logo {
 header .logo i {
    vertical-align: middle;
    font-weight: 500;
+   font-size: 1rem;
 }
 
 header ul {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+    align-items: center;
     margin-right: 5rem;
 }
 
 header ul a {
     color: black;
     margin: 0 20px;
-    font-size: .8rem;
+    font-size: .5rem;
+    display: block;
 
     position: relative;
     transition: all 300ms ease-in-out;
@@ -81,7 +84,7 @@ header .icons-area {
 }
 
 header .icons-area > div {
-    font-size: 1.1rem;
+    font-size: .9rem;
     cursor: pointer;
 }
 
@@ -101,7 +104,22 @@ header .icons-area > div:not(:last-child) {
     transform: translateY(-3px);
 }
 
+
+
+@media (max-width: 940px) {
+    header {
+        padding-inline: 3%;
+    }
+}
+
+/* @media (max-width: 748px) {
+    header.sticky {
+        display: none;
+    }
+} */
+
 @media (max-width: 658px) {
+
     .navlist {
         position: absolute;
         top: 100%;
@@ -135,7 +153,7 @@ header .icons-area > div:not(:last-child) {
         display: block;
         color: white;
         padding: 30px;
-        font-size: .9rem;
+        font-size: .7rem;
         cursor: pointer;
         text-align: center;
         width: 100%;
@@ -163,5 +181,7 @@ header .icons-area > div:not(:last-child) {
     .navlist.open {
         right: 0;
     }
+
+    
 }
 
