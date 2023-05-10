@@ -80,6 +80,10 @@ body.dark .contact-us h1::after {
     height: 2px;
 }
 
+body.dark .timestamp {
+    color: white;
+}
+
 
 
 

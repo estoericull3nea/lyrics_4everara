@@ -17,6 +17,15 @@
     text-align: center;
 }
 
+/* timestamp */
+.timestamp {
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+
+    font-size: .3rem;
+}
+
 
 @media (max-width: 337px) {
     h2 {
