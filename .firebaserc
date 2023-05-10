@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "lyrics-app-98933"
-  }
+    "default": "foureverara-m623",
+    "4ara": "foureverara-m623"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -1,0 +1,25 @@
+.vid-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    display: none;
+    
+}
+
+.theVid {
+    position: absolute;
+
+    height: auto;
+    width: 120%;
+    z-index: 10000;
+    top: 35%;
+    left: -10%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 30px 0 black;
+}
+
+.vid-container.open-vid {
+    display: block;
+}
+

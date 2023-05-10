@@ -1,0 +1,87 @@
+@import '../styles/default.css';
+@import '../styles/header.css';
+@import '../styles/variable.css';
+@import '../styles/home-section.css';
+@import '../styles/lyrics-section.css';
+@import '../styles/contact_us.css';
+@import '../styles/footer.css';
+@import '../styles/video-overlay-section.css';
+
+body {
+    overflow-x: hidden;
+}
+
+body.dark header{
+    background: black;
+    color: white;
+    transition: all 200ms ease-in-out;
+}
+
+body.dark header a{
+    color: white;
+}
+
+body.dark header a::after{
+    background: white;
+}
+
+body.dark .home {
+    transition: all 200ms ease-in-out;
+    background: no-repeat url('../images/dark_background.jpg') center center/ cover !important;
+    color: white;
+}
+
+body.dark .home #impor {
+    color: #146C94;
+}
+
+body.dark .home h3 {
+    color: white;
+}
+
+body.dark .home .btn {
+    color: white;
+}
+
+body.dark .lyrics {
+    transition: all 200ms ease-in-out;
+    background-color: #000000e5;
+    color: white;
+}
+
+body.dark .lyrics .box-wrapper .box {
+    transition: all 300ms ease-in-out;
+
+}
+
+body.dark .lyrics .box-wrapper .box:hover {
+    border: 2px solid white;
+}
+
+body.dark .lyrics .box .bottom p {
+    color: white;
+}
+
+body.dark .lyrics .btn {
+    color: white;
+}
+
+body.dark .contact-us {
+    transition: all 300ms ease-in-out;
+    background: no-repeat url('../images/moon.jpg') center center/cover;
+}
+ 
+body.dark .contact-us h1 {
+    color: white;
+}
+
+body.dark .contact-us h1::after {
+    background-color: white;
+    height: 2px;
+}
+
+
+
+
+
+
