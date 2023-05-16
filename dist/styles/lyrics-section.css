@@ -86,7 +86,7 @@ section.lyrics .box-wrapper .box .top .text-part h4 {
     font-size: .5rem;
     padding-top: .6rem;
     text-align: center;
-
+    padding-inline: 2px;
 }
 
 section.lyrics .box-wrapper .box .bottom {
