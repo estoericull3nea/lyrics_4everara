@@ -8,5 +8,8 @@
     "start": "node index.js"
   },
   "author": "ericson palisoc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^12.2.0"
+  }
 }
