@@ -1,60 +1,67 @@
-const body = document.body;
-const moon_icon = document.querySelector('.ri-moon-clear-line');
-const menu_icon = document.querySelector('.bx-menu-alt-right');
-const navlist = document.querySelector('.navlist');
-const nav = document.querySelector('header');
-const expand_btn = document.querySelector('.expand-btn');
-const hidden = document.querySelectorAll('.hide');
+// variables
+const body = document.body
+const moon_icon = document.querySelector('.ri-moon-clear-line')
+const menu_icon = document.querySelector('.bx-menu-alt-right')
+const navlist = document.querySelector('.navlist')
+const nav = document.querySelector('header')
+const expand_btn = document.querySelector('.expand-btn')
+const hidden = document.querySelectorAll('.hide')
 
+// moon icon click
 moon_icon.addEventListener('click', () => {
-    if(moon_icon.classList.contains('ri-moon-clear-line')) {
-        moon_icon.classList.remove('ri-moon-clear-line');
-        moon_icon.classList.add('bx-sun');
-    } else {
-        moon_icon.classList.remove('bx-sun');
-        moon_icon.classList.add('ri-moon-clear-line');
-    }
+  if (moon_icon.classList.contains('ri-moon-clear-line')) {
+    moon_icon.classList.remove('ri-moon-clear-line')
+    moon_icon.classList.add('bx-sun')
+  } else {
+    moon_icon.classList.remove('bx-sun')
+    moon_icon.classList.add('ri-moon-clear-line')
+  }
 
-    body.classList.toggle('dark');
+  body.classList.toggle('dark')
 })
 
+// menu icon click
 menu_icon.addEventListener('click', () => {
-    navlist.classList.toggle('open');
-    menu_icon.classList.toggle('bx-x-circle')
+  navlist.classList.toggle('open')
+  menu_icon.classList.toggle('bx-x-circle')
 })
 
+// if window is scroll
 window.addEventListener('scroll', () => {
-    navlist.classList.remove('open');
-    menu_icon.classList.remove('bx-x-circle')
-    nav.classList.toggle('sticky', window.scrollY > 0);
+  navlist.classList.remove('open')
+  menu_icon.classList.remove('bx-x-circle')
+  nav.classList.toggle('sticky', window.scrollY > 0)
 })
 
+// to expand songs
 expand_btn.addEventListener('click', () => {
-    for(let i=0; i<hidden.length; i++) {
-        hidden[i].classList.toggle('hide');
-    }
-    expand_btn.classList.toggle('change');
+  for (let i = 0; i < hidden.length; i++) {
+    hidden[i].classList.toggle('hide')
+  }
+  expand_btn.classList.toggle('change')
 
-    if(expand_btn.classList.contains('change')) {
-        expand_btn.textContent = 'Less';
-    } else {
-        expand_btn.textContent = 'Expand More';
-    }
+  if (expand_btn.classList.contains('change')) {
+    expand_btn.textContent = 'Less'
+  } else {
+    expand_btn.textContent = 'Expand More'
+  }
 })
 
-const allSection = document.querySelector('.navlist');
-const secBtn = document.querySelectorAll('.sample');
+// changing navlist depends on the page
+const allSection = document.querySelector('.navlist')
+const secBtn = document.querySelectorAll('.sample')
 function sampleFunc() {
-    for(let i = 0; i<secBtn.length; i++) {
-        secBtn[i].addEventListener('click', function(){
-            let currBtn = document.querySelectorAll('.active');
-            currBtn[0].className = currBtn[0].className.replace('active', '');
-            this.className += ' active';
-        })
-    } 
+  for (let i = 0; i < secBtn.length; i++) {
+    secBtn[i].addEventListener('click', function () {
+      let currBtn = document.querySelectorAll('.active')
+      currBtn[0].className = currBtn[0].className.replace('active', '')
+      this.className += ' active'
+    })
+  }
 }
 
-sampleFunc();
+// calling function
+sampleFunc()
 
 // const sr = ScrollReveal ({
 //     distance: '30px',
@@ -84,67 +91,55 @@ sampleFunc();
 // }
 
 // hoverBoxes();
-const openBox = document.querySelectorAll('.vid-container');
-const playBtn = document.querySelectorAll('.play-btn');
-const overlay = document.querySelectorAll('.overlay');
-const smapleExit = document.querySelectorAll('.sampleBtn');
+const openBox = document.querySelectorAll('.vid-container')
+const playBtn = document.querySelectorAll('.play-btn')
+const overlay = document.querySelectorAll('.overlay')
+const smapleExit = document.querySelectorAll('.sampleBtn')
+const pola = document.querySelectorAll('.theVid')
+// play btn is click
+for (let i = 0; i < playBtn.length; i++) {
+  playBtn[i].addEventListener('click', () => {
+    openBox[i].classList.toggle('open-vid')
+    overlay[i].classList.toggle('remove-overlay')
 
-const pola = document.querySelectorAll('.theVid');
-for(let i=0; i<playBtn.length; i++) {
-    playBtn[i].addEventListener('click', () => {
-
-        openBox[i].classList.toggle('open-vid');
-        overlay[i].classList.toggle('remove-overlay');
-    
-        pola[i].play();
-    })
+    pola[i].play()
+  })
 }
 
-for(let i=0; i<smapleExit.length; i++) {
-    smapleExit[i].addEventListener('click', function() {
-        if(openBox[i].classList.contains('open-vid')) {
+// exit btn is click
+for (let i = 0; i < smapleExit.length; i++) {
+  smapleExit[i].addEventListener('click', function () {
+    if (openBox[i].classList.contains('open-vid')) {
+      openBox[i].classList.remove('open-vid')
+      overlay[i].classList.remove('remove-overlay')
 
-            openBox[i].classList.remove('open-vid');
-            overlay[i].classList.remove('remove-overlay');
-    
-            pola[i].pause();
-            pola[i].currentTime = 0;
-        }
-    })
+      pola[i].pause()
+      pola[i].currentTime = 0
+    }
+  })
 }
 
-
+// transition
 TweenMax.from('.navlist, .logo', 1, {
-    opacity: 0,
-    y: -20,
-    ease: Expo.easeInOut
+  opacity: 0,
+  y: -20,
+  ease: Expo.easeInOut,
 })
 
 TweenMax.from('.moon-icon, .menu-icon', 1, {
-    opacity: 0,
-    x: 20,
-    ease: Expo.easeInOut
+  opacity: 0,
+  x: 20,
+  ease: Expo.easeInOut,
 })
 
 TweenMax.from('h1, h3, #impor', 2, {
-    opacity: 0,
-    y: -50,
-    ease: Power3.easeInOut
+  opacity: 0,
+  y: -50,
+  ease: Power3.easeInOut,
 })
 
 TweenMax.from('button', 1, {
-    opacity: 0,
-    y: 10,
-    ease: Expo.easeInOut
+  opacity: 0,
+  y: 10,
+  ease: Expo.easeInOut,
 })
-
-
-
-
-
-
-
-
-
-
-
